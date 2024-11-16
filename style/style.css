@@ -1,0 +1,13 @@
+header {
+    font-size: 40px;
+    color: rgb(92, 0, 0);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    color: rgb(92, 0, 0);
+    text-align: center;
+    margin: 5px;
+}

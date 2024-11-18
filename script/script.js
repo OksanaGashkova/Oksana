@@ -13,6 +13,9 @@ const rex = [];
 const bim = [];
 const barbos = [];
 
+
+
+
 const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, barbos];
 
 for (let i = 0; i < result.length; i++) {

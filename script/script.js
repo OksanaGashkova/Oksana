@@ -1,17 +1,17 @@
 const dogs = 'Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Бим, Барбос, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс';
 const result = dogs.split(', ');
 
-let sharik = [];
-let bobik = [];
-let tusik = [];
-let strelka = [];
-let belka = [];
-let graf = [];
-let tsigan = [];
-let juk = [];
-let rex = [];
-let bim = [];
-let barbos = [];
+const sharik = [];
+const bobik = [];
+const tusik = [];
+const strelka = [];
+const belka = [];
+const graf = [];
+const tsigan = [];
+const juk = [];
+const rex = [];
+const bim = [];
+const barbos = [];
 
 let arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, barbos];
 

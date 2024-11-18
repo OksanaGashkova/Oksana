@@ -17,49 +17,42 @@ const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, 
 
 for (let i = 0; i < result.length; i++) {
     
-    if (result[i] == 'Шарик') {
-       sharik.push('Шарик'); 
-    }
-
-    if (result[i] == 'Бобик') {
-        bobik.push('Бобик'); 
-    }
-
-     if (result[i] == 'Тузик') {
-        tusik.push('Тузик'); 
-    }
+    switch (result[i]) {
        
-    if (result[i] == 'Стрелка') {
+       case 'Шарик':
+        sharik.push('Шарик'); 
+       
+       case 'Бобик':
+        bobik.push('Бобик');
+
+       case 'Тузик':
+        tusik.push('Тузик');
+
+       case'Стрелка':
         strelka.push('Стрелка'); 
-    }
 
-    if (result[i] == 'Белка') {
-        belka.push('Белка'); 
-    }
+       case 'Белка':
+        belka.push('Белка');
 
-    if (result[i] == 'Граф') {
+       case 'Граф':
         graf.push('Граф'); 
-    }
 
-    if (result[i] == 'Цыган') {
+       case 'Цыган':
         tsigan.push('Цыган'); 
-    }
-    
-    if (result[i] == 'Жук') {
-        juk.push('Жук'); 
-    }
 
-    if (result[i] == 'Рекс') {
+       case 'Жук':
+        juk.push('Жук');
+
+       case 'Рекс':
         rex.push('Рекс'); 
-    }
 
-    if (result[i] == 'Бим') {
+       case 'Бим':
         bim.push('Бим'); 
-    }
 
-    if (result[i] == 'Барбос') {
+       case 'Барбос':
         barbos.push('Барбос'); 
     }
+    
 }
 
 function compareNumeric(i, j) {

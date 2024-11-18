@@ -19,41 +19,52 @@ const barbos = [];
 const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, barbos];
 
 for (let i = 0; i < result.length; i++) {
-    
+    debugger
     switch (result[i]) {
        
        case 'Шарик':
         sharik.push('Шарик'); 
-       
+        break;
+        
        case 'Бобик':
         bobik.push('Бобик');
+        break;
 
        case 'Тузик':
         tusik.push('Тузик');
+        break;
 
        case'Стрелка':
         strelka.push('Стрелка'); 
+        break;
 
        case 'Белка':
         belka.push('Белка');
+        break;
 
        case 'Граф':
         graf.push('Граф'); 
+        break;
 
        case 'Цыган':
         tsigan.push('Цыган'); 
+        break;
 
        case 'Жук':
         juk.push('Жук');
+        break;
 
        case 'Рекс':
         rex.push('Рекс'); 
+        break;
 
        case 'Бим':
         bim.push('Бим'); 
+        break;
 
        case 'Барбос':
-        barbos.push('Барбос'); 
+        barbos.push('Барбос');
+        break;
     }
     
 }

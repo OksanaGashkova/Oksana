@@ -69,13 +69,12 @@ for (let i = 0; i < result.length; i++) {
     
 }
 
-function compareNumeric(i, j) {
+
+arr.sort((i, j) => {
     if (i.length < j.length) return 1;
     if (i.length == j.length) return 0;
     if (i.length > j.length) return -1;
-}
-
-arr.sort(compareNumeric);
+})
 
 let BigName = arr[0];
 
@@ -86,7 +85,7 @@ let names = [sharik.length, bobik.length, tusik.length, strelka.length, belka.le
 let max = Math.max(...names);
 console.log(BigName[0] + ': ' + max);
 
-console.log('количество кличек без учета повторов' + ':' + ' ' + names.length);
+console.log('количество кличек без учета повторов: ' + names.length);
 
 console.log('Шарик: ' + sharik.length);
 console.log('Бобик: ' + bobik.length);

@@ -13,15 +13,12 @@ const rex = [];
 const bim = [];
 const barbos = [];
 
-
-
-
 const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, barbos];
 
-for (let i = 0; i < result.length; i++) {
-    
-    switch (result[i]) {
-       
+result.forEach(function(item) {
+
+    switch (item, i, arr) {
+
        case 'Шарик':
         sharik.push('Шарик'); 
         break;
@@ -66,15 +63,15 @@ for (let i = 0; i < result.length; i++) {
         barbos.push('Барбос');
         break;
     }
-    
-}
 
+})
 
 arr.sort((i, j) => {
     if (i.length < j.length) return 1;
     if (i.length == j.length) return 0;
     if (i.length > j.length) return -1;
 })
+
 
 let BigName = arr[0];
 

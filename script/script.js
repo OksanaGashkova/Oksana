@@ -17,7 +17,7 @@ const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, 
 
 result.forEach(function(item) {
 
-    switch (item, i, arr) {
+    switch (item) {
 
        case 'Шарик':
         sharik.push('Шарик'); 
@@ -73,14 +73,15 @@ arr.sort((i, j) => {
 })
 
 
-let BigName = arr[0];
+let bigName = arr[0][0];
 
-console.log('самая часто повторяющаяся кличка: ' + BigName[0]);
+console.log('самая часто повторяющаяся кличка: ' + bigName);
 
 let names = [sharik.length, bobik.length, tusik.length, strelka.length, belka.length, graf.length, tsigan.length, juk.length, rex.length, bim.length, barbos.length];
 
 let max = Math.max(...names);
-console.log(BigName[0] + ': ' + max);
+
+console.log(bigName + ': ' + max);
 
 console.log('количество кличек без учета повторов: ' + names.length);
 

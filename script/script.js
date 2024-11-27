@@ -1,70 +1,20 @@
-const dogs = 'Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Бим, Барбос, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс';
-const result = dogs.split(', ');
+const dogs = 'Шарик, Бобик, Тузик, Шарик, Стрелка, Оксана, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс, Бим, Барбос, Шарик, Бобик, Тузик, Шарик, Стрелка, Белка, Бобик, Граф, Цыган, Шарик, Жук, Рекс';
 
-const sharik = [];
-const bobik = [];
-const tusik = [];
-const strelka = [];
-const belka = [];
-const graf = [];
-const tsigan = [];
-const juk = [];
-const rex = [];
-const bim = [];
-const barbos = [];
+function dogsStr(str){
+    return str.split(', ');
+}
 
-const arr = [sharik, bobik, tusik, strelka, belka, graf, tsigan, juk, rex, bim, barbos];
+let arr = dogsStr(dogs);
 
-result.forEach(function(item) {
-
-    switch (item) {
-
-       case 'Шарик':
-        sharik.push('Шарик'); 
-        break;
-        
-       case 'Бобик':
-        bobik.push('Бобик');
-        break;
-
-       case 'Тузик':
-        tusik.push('Тузик');
-        break;
-
-       case'Стрелка':
-        strelka.push('Стрелка'); 
-        break;
-
-       case 'Белка':
-        belka.push('Белка');
-        break;
-
-       case 'Граф':
-        graf.push('Граф'); 
-        break;
-
-       case 'Цыган':
-        tsigan.push('Цыган'); 
-        break;
-
-       case 'Жук':
-        juk.push('Жук');
-        break;
-
-       case 'Рекс':
-        rex.push('Рекс'); 
-        break;
-
-       case 'Бим':
-        bim.push('Бим'); 
-        break;
-
-       case 'Барбос':
-        barbos.push('Барбос');
-        break;
+arr.forEach((value) => {
+    if (!obj[value]) {
+        obj[value] = 1; 
+    } else {
+        obj[value] = obj[value] + 1;
     }
-
 })
+
+console.log(obj);
 
 arr.sort((i, j) => {
     if (i.length < j.length) return 1;

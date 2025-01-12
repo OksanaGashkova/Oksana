@@ -6,6 +6,8 @@ function dogsStr(str){
 
 let arr = dogsStr(dogs);
 
+let obj = {};
+
 arr.forEach((value) => {
     if (!obj[value]) {
         obj[value] = 1; 
@@ -23,29 +25,9 @@ arr.sort((i, j) => {
 })
 
 
-let bigName = arr[0][0];
-
-console.log('самая часто повторяющаяся кличка: ' + bigName);
-
-let names = [sharik.length, bobik.length, tusik.length, strelka.length, belka.length, graf.length, tsigan.length, juk.length, rex.length, bim.length, barbos.length];
-
-let max = Math.max(...names);
-
-console.log(bigName + ': ' + max);
-
-console.log('количество кличек без учета повторов: ' + names.length);
-
-console.log('Шарик: ' + sharik.length);
-console.log('Бобик: ' + bobik.length);
-console.log('Тузик: ' + tusik.length);
-console.log('Стрелка: ' + strelka.length);
-console.log('Белка: ' + belka.length);
-console.log('Граф: ' + graf.length);
-console.log('Цыган: ' + tsigan.length);
-console.log('Жук: ' + juk.length);
-console.log('Рекс: ' + rex.length);
-console.log('Бим: ' + bim.length);
-console.log('Барбос: ' + barbos.length);
+for (var key in arr){
+    
+}
 
 
 

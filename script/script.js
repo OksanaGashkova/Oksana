@@ -24,12 +24,18 @@ arr.sort((i, j) => {
     if (i.length > j.length) return -1;
 })
 
+let name = '';
+let value = 0;
 
-for (var key in arr){
-    
+for (var key in obj) {
+    if (value < obj[key]) {
+        value = obj[key];
+        name = key; 
+    }
 }
 
-
+console.log(name);
+console.log(value);
 
 
 

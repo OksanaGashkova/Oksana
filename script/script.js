@@ -34,8 +34,9 @@ for (var key in obj) {
     }
 }
 
-console.log(name);
+console.log(name); 
 console.log(value);
+
 
 
 
